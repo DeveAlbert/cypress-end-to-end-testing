@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npm start",
-    "test": "npm start & cypress run"
+    
   },
   "keywords": [],
   "author": "",
