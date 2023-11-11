@@ -3,14 +3,11 @@ name: Cypress End-to-end Tests on Chrome
 on: [push]
 
 jobs:
-  install:
+  chrome:
     runs-on: ubuntu-22.04
+    name: E2E on Chrome
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Cypress run
-        uses: cypress-io/github-action@v6 
+      - uses: actions/checkout@v4
+      - uses: cypress-io/github-action@v6
         with:
-          start: npm run dev
           browser: chrome
