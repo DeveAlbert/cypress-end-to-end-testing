@@ -1,7 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  projectId: "cfpn5d"
+  projectId: "cfpn5d",
   e2e: {
     baseUrl: 'https://www.saucedemo.com/',
     defaultCommandTimeout: 30000,
